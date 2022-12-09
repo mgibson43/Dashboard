@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 10vh 90vh;
+}
+
+.nav {
+  background-color: lightblue;
+  grid-area: 1 / 1 / 3 / 2;
+}
+
+.header {
+  grid-area: 1 / 2 / 2 / 5;
+}
+
+.projects {
+  background-color: #bbb;
+  grid-area: 2 / 2 / 3 / 4;
+}
+
+.notifications {
+  background-color: #bbb;
+  grid-area: 2 / 4 / 3 / 5;
+}
