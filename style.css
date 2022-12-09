@@ -60,14 +60,21 @@ ul {
 
 .header {
   grid-area: 1 / 2 / 2 / 5;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem 1rem;
+  padding: 1rem;
+}
+
+.header p {
+  justify-self: center;
+}
+
+.header div:last-child {
+  justify-self: center;
 }
 
 .projects {
-  background-color: #bbb;
-  grid-area: 2 / 2 / 3 / 4;
-}
-
-.notifications {
-  background-color: #bbb;
-  grid-area: 2 / 4 / 3 / 5;
+  background-color: #d1d5db;
+  grid-area: 2 / 2 / 3 / 5;
 }
