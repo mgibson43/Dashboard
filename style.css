@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  transition: all 0.5s;
 }
 
 html {
@@ -65,26 +66,98 @@ ul {
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem 1rem;
   padding: 1rem;
+  align-content: center;
 }
 
-.header input {
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.sm-pad-left {
+  padding-left: 5%;
+}
+
+.header div input {
   outline: none;
   border: none;
   background-color: #e5e7eb;
   border-radius: 1rem;
-  padding: 0.2rem 1rem;
+  width: 100%;
+  padding: 0.5rem 1.2rem;
 }
 
-.header input:focus {
+.header div input:focus {
   outline: none;
+  border-radius: 0.5rem;
 }
 
-.header p {
-  justify-self: center;
+.search-btn {
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+.search-btn:hover,
+.search-btn:active {
+  transform: scale(120%);
+}
+
+.pfp-bar {
+  justify-self: flex-end;
+  font-size: 22px;
+  font-weight: 700;
+  padding-right: 10%;
+  gap: 2rem;
+}
+
+.media-btn-box {
+  gap: 2rem;
+}
+
+.media-btn {
+  border: none;
+  border-radius: 2rem;
+
+  background-color: #0284c7;
+  color: #eee;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  padding: 0.8rem 2rem;
+
+  cursor: pointer;
+}
+
+.media-btn:hover,
+.media-btn:active {
+  filter: brightness(80%);
+  color: #fff;
+  transform: scale(120%);
 }
 
 .header div:last-child {
-  justify-self: center;
+  justify-self: flex-end;
+  padding-right: 10%;
+}
+
+.welcome-box {
+  display: flex;
+  gap: 1rem;
+}
+
+.welcome-box div p {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+img {
+  height: 48px;
+  width: 48px;
+  overflow: hidden;
+  border-radius: 10rem;
 }
 
 .projects {
