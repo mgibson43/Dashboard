@@ -23,7 +23,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr);
-  grid-template-rows: minmax(12rem, 10vh) minmax(auto, 100%);
+  grid-template-rows: minmax(12rem, 10vh) minmax(100%, 100%);
 }
 
 .nav {
@@ -180,7 +180,7 @@ img {
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: minmax(1rem, 1rem) 4fr minmax(1rem, 1rem) 4fr;
+  grid-template-rows: 1rem 4fr 0.2rem 4fr;
   gap: 2rem;
   align-items: flex-start;
 }
@@ -202,10 +202,12 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   height: 100%;
+  margin-top: -1.8rem;
 }
 
 .anno-card {
   grid-area: 2 / 2 / 3 / 3;
+  margin-top: -1.8rem;
 }
 
 .tren-txt {
@@ -215,6 +217,7 @@ img {
 
 .tren-card {
   grid-area: 4 / 2 / 5 / 3;
+  margin-top: -1.8rem;
 }
 
 .proj-card {
