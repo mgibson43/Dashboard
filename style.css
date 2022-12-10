@@ -171,7 +171,8 @@ img {
 
   display: grid;
   grid-template-columns: 4fr 1fr;
-  grid-template-rows: auto;
+  grid-template-rows: minmax(2rem, 4rem) 4fr minmax(2rem, 4rem) 4fr;
+  gap: 1rem;
   align-items: flex-start;
 }
 
@@ -186,21 +187,35 @@ img {
 }
 
 .proj-cards {
-  grid-area: 2 / 1 / 4 / 3;
+  grid-area: 2 / 1 / 5 / 2;
 
   display: grid;
   grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  height: 100%;
 }
 
 .anno-card {
   grid-area: 2 / 2 / 3 / 3;
 }
 
-.tren {
+.tren-txt {
   grid-area: 3 / 2 / 4 / 3;
+  align-self: flex-end;
+}
+
+.tren-card {
+  grid-area: 4 / 2 / 5 / 3;
 }
 
 .proj-card {
   height: 16rem;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 100%;
 }
 
