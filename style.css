@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  transition: all 0.5s;
 }
 
 html {
@@ -23,7 +22,7 @@ p {
 .container {
   display: grid;
   grid-template-columns: 1fr repeat(3, 2fr);
-  grid-template-rows: minmax(12rem, 10vh) minmax(100%, 100%);
+  grid-template-rows: 12rem;
 }
 
 .nav {
@@ -173,72 +172,28 @@ img {
   border-radius: 10rem;
 }
 
-.projects {
-  background-color: #e5e7eb;
+.main-view {
   grid-area: 2 / 2 / 3 / 5;
-  padding: 2rem;
+  background-color: #e5e7eb;
+
+  padding: 1rem;
 
   display: grid;
   grid-template-columns: 3fr 1fr;
-  grid-template-rows: 1rem 4fr 0.2rem 4fr;
-  gap: 2rem;
-  align-items: flex-start;
 }
 
-.proj-txt {
-  grid-area: 1 / 1 / 2 / 2;
-  align-self: flex-end;
-}
-
-.anno-txt {
-  grid-area: 1 / 2 / 2 / 3;
-  align-self: flex-end;
+.projects {
+  grid-area: 1 / 1 / 3 / 2;
 }
 
 .proj-cards {
-  grid-area: 2 / 1 / 5 / 2;
-
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
-  height: 100%;
-  margin-top: -1.8rem;
-}
-
-.anno-card {
-  grid-area: 2 / 2 / 3 / 3;
-  margin-top: -1.8rem;
-}
-
-.tren-txt {
-  grid-area: 3 / 2 / 4 / 3;
-  align-self: flex-end;
-}
-
-.tren-card {
-  grid-area: 4 / 2 / 5 / 3;
-  margin-top: -1.8rem;
 }
 
 .proj-card {
-  height: 16rem;
-  border-left: 10px solid #84cc16;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
-
-.proj-card div:nth-child(2) {
-  align-self: flex-end;
-  display: flex;
-  gap: 1rem;
-}
-
-.card {
   background-color: #fff;
-  border-radius: 1rem;
   padding: 1rem;
-  height: 100%;
-  box-shadow: 1px 1px 4px rgba(0,0,0,0.2);
+  border-radius: 1rem;
 }
-
