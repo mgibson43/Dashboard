@@ -198,16 +198,18 @@ img {
   height: 95%;
 }
 
-.proj-card {
+.card {
   background-color: #fff;
-  padding: 2rem;
-  border-left: 8px solid #84cc16;
   border-radius: 1rem;
   box-shadow: 2px 2px 10px rgba(0,0,0,0.1);
-
+  padding: 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+.proj-card {
+  border-left: 8px solid #84cc16;  
 }
 
 .proj-card-txt {
@@ -218,4 +220,16 @@ img {
   align-self: flex-end;
   display: flex;
   gap: 2rem;
+}
+
+.anno-card {
+  height: 95%;
+}
+
+.border {
+  border: 1px solid #ddd;
+}
+
+.trend-card {
+  height: 90%;
 }
